@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang=ko">
+    <head>
+        <script src="./08-phone.js"></script>
+
+        <title>Phone</title>
+
+        <style>
+            .edittext {
+                width: 60px;
+                height: 25px;
+                font-size: 20px;
+                text-align: center;
+            }
+            .edittext:first-child {
+                width: 45px;
+            }
+        </style>
+    </head>
+    <body>
+       <input id="p1" class="edittext" type="text" maxlength="3" autocomplete="off" oninput="changeFocus1()"> -
+       <input id="p2" class="edittext" type="text" maxlength="4" autocomplete="off" oninput="changeFocus2()"> - 
+       <input id="p3" class="edittext" type="text" maxlength="4" autocomplete="off" oninput="changeFocus2()">
+    </body>
+</html>

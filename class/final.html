@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./final.css">
+        <script src="./final.js"></script>
+
+        <title>Register Page</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <div class="header__title">코드캠프 회원가입</div>
+            </div>
+            <div class="container">
+                <input id="email" class="data__input border__input" type="email" placeholder="이메일을 입력해 주세요." autocomplete="off">
+                <input id="name" class="data__input border__input" type="text" placeholder="이름을 입력해 주세요." autocomplete="off">
+                <input id="password" class="data__input border__input" type="password" placeholder="비밀번호를 입력해 주세요.">
+                <input id="rePassword" class="data__input border__input" type="password" placeholder="비밀번호를 다시 입력해 주세요.">
+                <div class="phone__box">
+                    <input id="phone1" class="phone__input border__input" type="text" oninput="phoneLength1()" maxlength="3"> -
+                    <input id="phone2" class="phone__input border__input" type="text" oninput="phoneLength2()" maxlength="4"> -
+                    <input id="phone3" class="phone__input border__input" type="text" oninput="phoneLength2()" maxlength="4">
+                </div>
+                <div class="validation__box">
+                    <div class="token__box">
+                        <div id="token" class="token">000000</div>
+                        <button id="sendToken" class="send__token box__disabled" onclick="sendToken()" disabled>인증번호 전송</button>
+                    </div>
+                    <div class="token__box">
+                        <div id="timer" class="timer">03:00</div>
+                        <button id="checkToken" class="check__token" onclick="checkToken()" disabled>인증 완료</button>
+                    </div>
+                </div>
+                <select class="area__box">
+                    <option value="">지역을 선택하세요.</option>
+                    <option>서울</option>
+                    <option>경기</option>
+                    <option>인천</option>
+                    <option>부산</option>
+                </select>
+                <div class="gender__box">
+                    <input type="radio" id="female" name="gender"><label for="female">여성</label>
+                    <input type="radio" id="male" name="gender"><label for="male">남성</label>
+                </div>
+                <div class="divider"></div>
+                <button class="signup" onclick="validation()">가입하기</button>
+            </div>
+        </div>
+    </body>
+</html>

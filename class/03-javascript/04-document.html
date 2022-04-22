@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <script src="./04-document.js"></script>
+        <title>Document</title>
+
+        <style>
+            input {
+                padding: 5px;
+                outline: none;
+                border: 1px solid black;
+            }
+            input:focus {
+                border: 1px solid purple;
+            }
+            button {
+                padding: 5px 20px;
+                cursor: pointer;
+            }
+            .greeting {
+                transition: 0.5s;
+            }
+            .greeting:hover {
+                transition: 0.5s;
+                color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="greeting" id="greeting">안녕하세요</div><br>
+        <input type="text" id="inputData"><br><br>
+        <table>
+            <tr>
+                <td><button id="buttonH1" onclick="changeHeading1()">h1</button></td>
+                <td><button id="buttonH2" onclick="changeHeading2()">h2</button></td>
+                <td><button id="buttonH3" onclick="changeHeading3()">h3</button></td>
+            </tr>
+        </table>
+        <br><br>
+        <button onclick="changeGreeting()">확인</button>
+    </body>
+</html>

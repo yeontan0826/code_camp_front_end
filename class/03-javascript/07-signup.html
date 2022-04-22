@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <script src="./07-signup.js"></script>
+        
+        <title>EventListener</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container {
+                width: 300px;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+            }
+            .edittext {
+                height: 40px;
+                margin-bottom: 10px;
+                padding: 0 6px;
+            }
+            button {
+                height: 40px;
+                border: none;
+                border-radius: 20px;
+            }
+            button:disabled {   
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <input id="email" class="edittext" type="email" placeholder="이메일" oninput="checkValidation()" autocomplete="off">
+            <input id="password" class="edittext" type="password" placeholder="비밀번호" oninput="checkValidation()">
+            <input id="rePassword" class="edittext" type="password" placeholder="비밀번호 확인" oninput="checkValidation()">
+            <button id="submit" disabled="true">회원가입</button>
+        </div>
+    </body>
+</html>

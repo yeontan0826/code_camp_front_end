@@ -1,0 +1,210 @@
+@font-face {
+    font-family: "Sci Fied Bitmap";
+    src: url("//db.onlinewebfonts.com/t/535dff488baa782f6dc1ac117691d250.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PFStardust';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.background {
+    width: 1024px;
+    height: 600px;
+    padding: 20px;
+    background-image: url('../images/background.png');
+}
+.outerbox {
+    width: 808px;
+    height: 544px;
+    background-image: url('../images/outerbox.png');
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 32px 0 0 32px;
+}
+
+/* 왼쪽영역 */
+.wrapper__left {
+    width: 208px;
+    height: 472px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 3px 0 3px;
+}
+.wrapper__left__header {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.today {
+    color: #55B2D4;
+    font-size: 9px;
+    padding-top: 10px;
+    font-family: Sci Fied Bitmap;
+}
+.zero, .count {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.zero {
+    color: red;
+    font-size: 11px;
+}
+.count {
+    font-size: 11px;
+}
+.wrapper__left__body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 20px 30px 20px 30px;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+.left__body__header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.left__body__header__gray {
+    width: 148px;
+    height: 133px;
+    background-color: gainsboro;
+}
+.left__body__header__line {
+    width: 100%;
+    border-top: 1px dotted black;
+    margin: 12px 0;
+}
+.left__body__profile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.profile__detail {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+.fas {
+    font-size: 13px;
+    margin-right: 12px;
+}
+.profile__title {
+    color: #999999;
+}
+.left__body__footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.wrapper__feel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.feel__title {
+    color: black;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.feel__select {
+    background-color: white;
+    border: 1px solid #999999;
+    outline: none;
+}
+
+/* 오른쪽 영역 */
+.wrapper__right {
+    width: 524px;
+    height: 472px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 0 3px;
+}
+.wrapper__right__header {
+    width: 510px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14px;
+}
+.right__header__title, .right__header__setting {
+    color: #55B2D4;
+}
+.right__header__title {
+    font-size: 16px;
+    font-weight: 600;
+}
+.right__header__setting {
+    font-family: PFStardust;
+    font-size: 12px;
+}
+.wrapper__right__body {
+    display: flex;
+    flex-direction: column;
+    width: 510px;
+    height: 445px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+.navigation {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 62px;
+    height: 100px;
+    top: 100px;
+    left: 784px;
+}
+.navigation > .navigation__item:first-of-type {
+    background-color: white;
+    color: #298EB5;
+}
+.navigation__item {
+    width: 60px;
+    height: 30px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    line-height: 30px;
+    z-index: 0;
+    background-color: #298EB5;
+    text-align: center;
+    font-family: PFStardust;
+    font-size: 12px;
+    border: 1px solid #0F465E;
+    color: white;
+}
